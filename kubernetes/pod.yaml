@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-practice
+  labels:
+    app: example
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.17
+    ports:
+    - containerPort: 80
+    - nodePort: 8080
+    - targetPort: 80 
+
