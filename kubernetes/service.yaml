@@ -6,5 +6,5 @@ spec:
   selector:
     app: pod
   ports:
-    - port: 9000        # 서비스에서 외부로 노출하는 포트
-      targetPort: 8080  # 파드의 컨테이너 포트
+  - port: 9000
+    targetPort: 8080
